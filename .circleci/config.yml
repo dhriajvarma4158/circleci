@@ -6,7 +6,7 @@ orbs:
 jobs:
   test_1:
     docker:
-      - image: cimg/node:18.17.0
+      - image: cimg/node:18.17.0-browsers  # Includes Chrome + libs for Percy
     steps:
       - checkout
       - run: npm install
@@ -16,7 +16,7 @@ jobs:
 
   test_2:
     docker:
-      - image: cimg/node:18.17.0
+      - image: cimg/node:18.17.0-browsers
     steps:
       - checkout
       - run: npm install
@@ -26,7 +26,7 @@ jobs:
 
   test_3:
     docker:
-      - image: cimg/node:18.17.0
+      - image: cimg/node:18.17.0-browsers
     steps:
       - checkout
       - run: npm install

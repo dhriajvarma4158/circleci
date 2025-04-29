@@ -1,14 +1,11 @@
 {
-    "name": "my-app",
+    "name": "visual-test-pipeline",
     "version": "1.0.0",
-    "description": "A sample project for CircleCI + Percy",
-    "main": "index.js",
     "scripts": {
-      "test": "echo \"Running tests...\" && exit 0"
+      "test-1": "echo '🔍 Percy test 1: OK!'",
+      "test-2": "echo '🔍 Percy test 2: OK!'",
+      "test-3": "echo '🔍 Percy test 3: OK!'"
     },
-    "keywords": [],
-    "author": "Your Name",
-    "license": "MIT",
     "devDependencies": {
       "@percy/cli": "^1.0.0"
     }
