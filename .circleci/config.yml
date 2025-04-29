@@ -11,8 +11,8 @@ jobs:
       - checkout
       - run: npm install
       - run:
-          name: Run tests with Percy
-          command: percy exec -- npm run test-1
+          name: Run Percy test 1
+          command: npx percy exec -- npm run test-1
 
   test_2:
     docker:
@@ -21,8 +21,8 @@ jobs:
       - checkout
       - run: npm install
       - run:
-          name: Run tests with Percy
-          command: percy exec -- npm run test-2
+          name: Run Percy test 2
+          command: npx percy exec -- npm run test-2
 
   test_3:
     docker:
@@ -31,8 +31,8 @@ jobs:
       - checkout
       - run: npm install
       - run:
-          name: Run tests with Percy
-          command: percy exec -- npm run test-3
+          name: Run Percy test 3
+          command: npx percy exec -- npm run test-3
 
 workflows:
   version: 2
