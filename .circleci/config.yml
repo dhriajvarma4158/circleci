@@ -10,8 +10,9 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - percy/exec:
-          command: npm run test-1
+      - run:
+          name: Run tests with Percy
+          command: percy exec -- npm run test-1
 
   test_2:
     docker:
@@ -19,8 +20,9 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - percy/exec:
-          command: npm run test-2
+      - run:
+          name: Run tests with Percy
+          command: percy exec -- npm run test-2
 
   test_3:
     docker:
@@ -28,8 +30,9 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - percy/exec:
-          command: npm run test-3
+      - run:
+          name: Run tests with Percy
+          command: percy exec -- npm run test-3
 
 workflows:
   version: 2
