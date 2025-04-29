@@ -1,0 +1,16 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "description": "A sample project for CircleCI + Percy",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Running tests...\" && exit 0"
+    },
+    "keywords": [],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+      "percy-cli": "^1.0.0"
+    }
+  }
+  
